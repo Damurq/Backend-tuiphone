@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.productManagement',
+    'apps.salesManagement'
 ]
 
 MIDDLEWARE = [
@@ -118,3 +120,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIR = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)),'Frontend-tuiphone/static')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join((BASE_DIR),'media')
+
