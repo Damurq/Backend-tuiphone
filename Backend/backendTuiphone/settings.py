@@ -56,7 +56,7 @@ ROOT_URLCONF = 'backendTuiphone.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)),'Frontend-tuiphone/template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
